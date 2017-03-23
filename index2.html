@@ -25,13 +25,16 @@
 <!-- CSS begin -->
 		
 		<link rel="stylesheet" type="text/css" href="css/style.css" >
-        <link rel="stylesheet" type="text/css" href="css/skeleton.css" >
-		<link rel="stylesheet" type="text/css" href="css/sequencejs-theme.modern-slide-in.css" >
+		<link rel="stylesheet" type="text/css" href="css/skeleton.css" >
 		<link rel="stylesheet" type="text/css" href="css/skin.css" >
 		<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-1.3.4.css"  >
+		
+		<!-- Flexslider CSS -->
+		
+		<link rel="stylesheet" type="text/css" href="css/flexslider.css" >
 
 		<!--[if lt IE 9]><link rel="stylesheet" type="text/css" media="screen" href="css/sequencejs-theme.modern-slide-in.ie.css" /><![endif]-->
-		<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="css/ie-warning.css" ><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/ie-warning.css" ><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" type="text/css" media="screen" href="css/style-ie.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/ei8fix.css" ><![endif]-->
         
@@ -43,18 +46,23 @@
 		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 		<script type="text/javascript" src="js/superfish.js"></script>
 		<script type="text/javascript" src="js/sequence.jquery-min.js"></script>
-		<script type="text/javascript" src="js/sequence-slider.js"></script>
 		<script type="text/javascript" src="js/jquery.jcarousel.js"></script>
 		<script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.js"></script>
 		<script type="text/javascript" src="js/jQuery.BlackAndWhite.min.js"></script>
 		<script type="text/javascript" src="js/jquery.tweet.js"></script>
 		<script type="text/javascript" src="js/jquery.accordion.2.0.min.js"></script>
-		<script type="text/javascript" src="js/jquery.quicksand.js"></script>
-		<script type="text/javascript" src="js/jflickrfeed.min.js"></script>
-
 		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/jflickrfeed.min.js"></script>
+		<script type="text/javascript" src="js/jquery.quicksand.js"></script>
+	
 		
-		<script type="text/javascript">
+		<!-- Optional FlexSlider Additions -->
+		<script src="js/jquery.flexslider.js"></script>
+		<script type="text/javascript" src="js/flex-slider.js"></script>
+		
+		<script src="js/jquery.mousewheel.js"></script>
+
+<script type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-37506712-1']);
@@ -66,7 +74,7 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
-</script>
+</script>		
 
 		<!--[if lt IE 9]>
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -109,11 +117,11 @@
 				<div class="sixteen columns ">
 						<ul id="social-links" class="clearfix">
 							<li><a id="facebook-link" target="_blank" title="Facebook" href="http://themeforest.net/item/fincom-responsive-html-template/3680337?ref=abcgomel"></a></li>
-							<li><a id="skype-link" target="_blank" title="Skype" href="http://themeforest.net/item/fincom-responsive-html-template/3680337?ref=abcgomel"></a></li>
+							<li><a id="pintrest-link" target="_blank" title="Skype" href="http://themeforest.net/item/fincom-responsive-html-template/3680337?ref=abcgomel"></a></li>
 							<li><a id="twitter-link" target="_blank" title="Twitter" href="http://themeforest.net/item/fincom-responsive-html-template/3680337?ref=abcgomel"></a></li>
-							<li><a id="flickr-link" target="_blank" title="Flickr" href="http://themeforest.net/item/fincom-responsive-html-template/3680337?ref=abcgomel"></a></li>
-							<li><a id="vimeo-link" target="_blank" title="Vimeo" href="http://themeforest.net/item/fincom-responsive-html-template/3680337?ref=abcgomel"></a></li>
-							<li><a id="rss-link" target="_blank" title="Dribbble" href="http://themeforest.net/item/fincom-responsive-html-template/3680337?ref=abcgomel"></a></li>
+							<li><a id="linkedin-link" target="_blank" title="Flickr" href="http://themeforest.net/item/fincom-responsive-html-template/3680337?ref=abcgomel"></a></li>
+							<li><a id="dribbble-link" target="_blank" title="Vimeo" href="http://themeforest.net/item/fincom-responsive-html-template/3680337?ref=abcgomel"></a></li>
+							<li><a id="googleplus-link" target="_blank" title="Dribbble" href="http://themeforest.net/item/fincom-responsive-html-template/3680337?ref=abcgomel"></a></li>
 						</ul>
 					<div class="search-container clearfix">
 						<form action="#" class="search-form">
@@ -132,7 +140,7 @@
 					<!-- TOP MENU -->
 					<nav id="main-nav">
 						<ul class="sf-menu">
-							<li ><a href="index.html">Home</a>
+							<li class="current"><a href="index.html">Home</a>
 								<ul>
 									<li><a href="index2.html">Home 2</a></li>
 								</ul>
@@ -145,7 +153,7 @@
 									<li><a href="#">3D level menu</a>
 										<ul>
 											<li><a href="#">Menu item 1</a></li>
-											<li><a href="#">Menu item 1</a></li>
+											<li><a href="#">Menu item 2</a></li>
 										</ul>
 									</li>
 								</ul>
@@ -161,7 +169,7 @@
 									<li><a href="portfolio-single.html">Portfolio single</a></li>
 								</ul>
 							</li>
-							<li class="current" ><a href="blog.html">Blog</a>
+							<li><a href="blog.html">Blog</a>
 								<ul>
 									<li><a href="blog-single.html">Blog-single</a></li>
 								</ul>
@@ -172,298 +180,140 @@
 				</div>
 			</div>
 		</header>
-<!-- PAGE TITLE -->
+<!-- SLIDER -->
+	<div id="slider-container" class="container">
+		
+					<div class="flexslider">
+						<ul class="slides">
+							<li>
+								<img src="images/img-gallery.jpg" alt="image" />
+								<div class="flex-caption">
+									<div class="caption-container">
+										<h3><span class="bold">SUT</span> ID ELIT</h3>
+									</div>	
+									<div class="caption-text-container">
+										<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+									</div>
+									<div class="caption-a-container">
+										<a href="" class="slider-read-more"><span>Read</span> more</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<img src="images/img-gallery2.jpg" alt="image" />
+								<div class="flex-caption">
+									<div class="caption-container">
+										<h3><span class="bold">DIGNISSIM</span> MAGNA</h3>
+									</div>	
+									<div class="caption-text-container">
+										<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit.</p>
+									</div>
+									<div class="caption-a-container">
+										<a href="" class="slider-read-more"><span>Read</span> more</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<img src="images/img-gallery3.jpg" alt="image" />
+								<div class="flex-caption">
+									<div class="caption-container">
+										<h3><span class="bold">SIT</span> LECTUS AMET</h3>
+									</div>	
+									<div class="caption-text-container">
+										<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Torta gravida at eget metus.</p>
+									</div>
+									<div class="caption-a-container">
+										<a href="" class="slider-read-more"><span>Read</span> More</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+	</div>
+<!-- UNDER SLIDER BG -->	
 	<div class="container m-bot-25 clearfix">
 		<div class="sixteen columns">
-			<h1 class="page-title">Blog</h1>
-		</div>
-	</div>	
-<!-- CONTENT -->
-	<div class="container clearfix ">
-		<div class="eleven columns m-bot-25 clearfix">
-			<div class="blog-item m-bot-25">
-				<div class=" content-container-white ">
-					<div class="view view-first">
-						<img src="images/content/blog-1.jpg" alt="project" >
-						<div class="mask">
-							<h2><span class="bold">Lorem</span> Ipsum</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec eros ligula. Vestibulum porta, purus ut lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec eros ligula. Vestibulum porta, purus ut lacinia.</p>
-							<a href="blog-single.html" class="link info"></a><a href="images/content/blog-big-1.jpg" class="lightbox zoom info"></a>
-						</div>
-					</div>
-					<div class="lw-item-caption-container">
-						<a href="blog-single.html" ><span class="bold">Lorem</span> Ipsum</a>
-					</div>
-					<div class="blog-info-container">
-						<ul class="clearfix">
-                 			<li class="date">10 Oct 2012</li>
-                 			<li class="author">Admin</li>
-                 			<li class="view">16 views</li>
-                 			<li class="comment">25 Comments</li>
-                 			<li class="tag">Website Design - Responsive - Clean</li>
-                 		</ul>
-					</div>	
-					<div class="blog-text-container clearfix">
-						<p>Vestibulum pulvinar adipiscing turpis vitae ultrices. Suspendisse eu lectus dui, vitae lobortis lorem. Fusce gravida nibh et ante accusan molestie. Duis convallis semper felis. Curabitur fringilla placerat vestibulum. Aenean dignissim libero et quam tristique vel vehicula nunc suscipit. Fusce id dui sem. Cras gravida odio et magna faucbus iaculis. Vestibulum ante ipsum primis in faucibus orci.</p>
-						<a class="arrow right" href="blog-single.html"><span class="bold">Read</span>	More</a>
-					</div>
-				</div>
-				<div class="content-under-container-white"></div>
-			</div>
-			<div class="blog-item m-bot-25">
-				<div class=" content-container-white ">
-					<div class="view view-first">
-						<img src="images/content/blog-2.jpg" alt="project" >
-						<div class="mask">
-							<h2><span class="bold">Mauris</span> Lacinia</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec eros ligula. Vestibulum porta, purus ut lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec eros ligula. Vestibulum porta, purus ut lacinia.</p>
-							<a href="blog-single.html" class="link info"></a><a href="images/content/blog-big-2.jpg" class="lightbox zoom info"></a>
-						</div>
-					</div>
-					<div class="lw-item-caption-container">
-						<a href="blog-single.html" ><span class="bold">Mauris</span> Lacinia</a>
-					</div>
-					<div class="blog-info-container">
-						<ul class="clearfix">
-                 			<li class="date">10 Oct 2012</li>
-                 			<li class="author">Admin</li>
-                 			<li class="view">16 views</li>
-                 			<li class="comment">25 Comments</li>
-                 			<li class="tag">Website Design - Responsive - Clean</li>
-                 		</ul>
-					</div>	
-					<div class="blog-text-container clearfix">
-						<p>Vestibulum pulvinar adipiscing turpis vitae ultrices. Suspendisse eu lectus dui, vitae lobortis lorem. Fusce gravida nibh et ante accusan molestie. Duis convallis semper felis. Curabitur fringilla placerat vestibulum. Aenean dignissim libero et quam tristique vel vehicula nunc suscipit. Fusce id dui sem. Cras gravida odio et magna faucbus iaculis. Vestibulum ante ipsum primis in faucibus orci.</p>
-						<a class="arrow right" href="blog-single.html"><span class="bold">Read</span>	More</a>
-					</div>
-				</div>
-				<div class="content-under-container-white"></div>
-			</div>
-			<div class="blog-item m-bot-25">
-				<div class=" content-container-white ">
-					<div class="view view-first">
-						<img src="images/content/blog-3.jpg" alt="project" >
-						<div class="mask">
-							<h2><span class="bold">Cras</span> Tincid</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec eros ligula. Vestibulum porta, purus ut lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec eros ligula. Vestibulum porta, purus ut lacinia.</p>
-							<a href="blog-single.html" class="link info"></a><a href="images/content/blog-big-3.jpg" class="lightbox zoom info"></a>
-						</div>
-					</div>
-					<div class="lw-item-caption-container">
-						<a href="blog-single.html" ><span class="bold">Cras</span> Tincid</a>
-					</div>
-					<div class="blog-info-container">
-						<ul class="clearfix">
-                 			<li class="date">10 Oct 2012</li>
-                 			<li class="author">Admin</li>
-                 			<li class="view">16 views</li>
-                 			<li class="comment">25 Comments</li>
-                 			<li class="tag">Website Design - Responsive - Clean</li>
-                 		</ul>
-					</div>	
-					<div class="blog-text-container clearfix">
-						<p>Vestibulum pulvinar adipiscing turpis vitae ultrices. Suspendisse eu lectus dui, vitae lobortis lorem. Fusce gravida nibh et ante accusan molestie. Duis convallis semper felis. Curabitur fringilla placerat vestibulum. Aenean dignissim libero et quam tristique vel vehicula nunc suscipit. Fusce id dui sem. Cras gravida odio et magna faucbus iaculis. Vestibulum ante ipsum primis in faucibus orci.</p>
-						<a class="arrow right" href="blog-single.html"><span class="bold">Read</span>	More</a>
-					</div>
-				</div>
-				<div class="content-under-container-white"></div>
-			</div>
-	<!-- PAGINATION-1 -->
-			<div class="pagination-1-container ">
-				<ul class="pagination-1">
-					<li>
-						<a class="pag-prev" href="#"></a>
-					</li>
-					<li>
-						<a class="pag-current" href="#">1</a>
-					</li>
-					<li>
-						<a href="#">2</a>
-					</li>
-					<li>
-						<a href="#">3</a>
-					</li>
-					<li>
-						<a class="pag-next" href="#"></a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	<!-- RIGHT SIDE -->
-		<div class="five columns m-bot-25 clearfix">
-			<div class="content-container-white ">
-				
-				<div class="blog-side-container border-bottom-dashed">
-					<h3 class="title-block">Blog Categories</h3>
-					<ul class="categories-style">
-						<li class="active">
-							<h6><a href="http://themeforest.net/item/fincom-responsive-html-template/3680337?ref=abcgomel">Accusamus</a></h6>
-						</li>
-						<li>
-							<h6><a href="http://themeforest.net/item/fincom-responsive-html-template/3680337?ref=abcgomel">Vitae lobortis</a></h6>
-						</li>
-						<li>
-							<h6><a href="http://themeforest.net/item/fincom-responsive-html-template/3680337?ref=abcgomel">Curabitur fringila</a></h6>
-						</li>
-						<li>
-							<h6><a href="http://themeforest.net/item/fincom-responsive-html-template/3680337?ref=abcgomel">Tristique velcula </a></h6>
-						</li>
-						<li>
-							<h6><a href="http://themeforest.net/item/fincom-responsive-html-template/3680337?ref=abcgomel">Vestibum pulvinar</a></h6>
-						</li>
-						<li>
-							<h6><a href="http://themeforest.net/item/fincom-responsive-html-template/3680337?ref=abcgomel">Aenean dignissim</a></h6>
-						</li>
-						<li>
-							<h6><a href="http://themeforest.net/item/fincom-responsive-html-template/3680337?ref=abcgomel">Ultricets suspen</a></h6>
-						</li>
-					</ul>
-				</div>
-				
-				<div class="blog-side-container border-bottom-dashed">
-					<h3 class="title-block">Tabs</h3>
-					<ul class="tabs-nav">
-						<li class="active">
-							<a href="#tab1">First Tab</a>
-						</li>
-						<li class="">
-							<a href="#tab2">Second</a>
-						</li>
-					</ul>
-					<div class="tabs-container">
-						<div id="tab1" class="tab-content" >
-							<ul class="latest-post-container">
-								<li class="latest-post-sidebar clearfix">
-									<div class="lp-img-cont left">
-										<a href="" ><img src="images/content/port-2-3.jpg" alt="project"></a>
-									</div>
-									<div class="lp-title-cont right">
-										<p class="latest-post-sidebar-title"><a href="">Aenean nisl orci consectetur elit.</a></p>
-										<p class="latest-post-sidebar-date">Oct 15, 2012</p>
-									</div>	
-								</li>
-								<li class="latest-post-sidebar clearfix">
-									<div class="lp-img-cont left">
-										<a href="" ><img src="images/content/port-2-2.jpg" alt="project"></a>
-									</div>
-									<div class="lp-title-cont right">
-										<p class="latest-post-sidebar-title"><a href="">Aenean nisl orci consectetur elit.</a></p>
-										<p class="latest-post-sidebar-date">Oct 10, 2012</p>
-									</div>	
-								</li>
-								<li class="latest-post-sidebar clearfix">
-									<div class="lp-img-cont left">
-										<a href="" ><img src="images/content/port-2-4.jpg" alt="project"></a>
-									</div>
-									<div class="lp-title-cont right">
-										<p class="latest-post-sidebar-title"><a href="">Aenean nisl orci consectetur elit.</a></p>
-										<p class="latest-post-sidebar-date">Jul 14, 2012</p>
-									</div>
-								</li>
-							</ul>
-						</div>
-						<div id="tab2" class="tab-content" >
-							<ul class="latest-post-container text">
-								<li>
-									<p>Aenean nisl orci, condim entum ultrices consequat eu, vehicula ac.</p>
-								</li>
-								<li>
-									<p>Aenean nisl orci, condim entum ultrices consequat eu, vehicula ac.</p>
-								</li>
-								<li>
-									<p>Aenean nisl orci, condim entum ultrices consequat eu, vehicula ac.</p>
-								</li>	
-							</ul>
-						</div>
-					</div>
-				</div>
-				
-				<div class="blog-side-container border-bottom-dashed">
-					<h3 class="title-block">Accordion</h3>
-					<ul id="accordion" class="accordion-style">
-						<li>
-							<h6>Accusamus</h6>
-							<p class="panel loading">
-								At vero eos et accusamus et iusto odio dignissimos ducimus qui.
-							</p>
-						</li>
-						<li>
-							<h6>Praesentium</h6>
-							<p class="panel loading">
-								At vero eos et accusamus et iusto odio dignissimos ducimus qui.
-							</p>
-						</li>
-						<li>
-							<h6>Dignissimos</h6>
-							<p class="panel loading ">
-								At vero eos et accusamus et iusto odio dignissimos ducimus qui.
-							</p>
-						</li>
-						<li>
-							<h6>Corrupti</h6>
-							<p class="panel loading">
-								At vero eos et accusamus et iusto odio dignissimos ducimus qui.
-							</p>
-						</li>
-					</ul>
-				</div>
-
-				<div class="blog-side-container border-bottom-dashed">
-					<h3 class="title-block">Tags</h3>
-						<div class="tag-cloud">
-							<ul class="clearfix">
-								<li><a href=""><span></span>HTML 5</a></li>
-								<li><a href=""><span></span>CSS 3</a></li>
-								<li><a href=""><span></span>Photoshop</a></li>
-								<li><a href=""><span></span>WordPress</a></li>
-								<li><a href=""><span></span>Joomla!</a></li>
-								<li><a href=""><span></span>UI</a></li>
-								<li><a href=""><span></span>Template</a></li>
-							</ul>
-						</div>
-				</div>
-				
-				<div class="blog-side-container border-bottom-dashed">
-					<h3 class="title-block">Text</h3>
-						<p>
-							Vestibulum pulvinar adipiscing turpis vitae ultrices. Suspendisse eu lectus. 
-						</p>
-				</div>
-
-				<div class="blog-side-container">
-					<h3 class="title-block">Flickr</h3>
-						<ul id="flickrfeed" class="clearfix"></ul>
-				</div>
-
-				
+			<div class="content-container-white under-slider-caption">
+				<h2>	We are <span class="yellow">Fincom</span>, a digital agency</h2>
+				<h2>We design, develop websites and mobile applications</h2>
 			</div>
 			<div class="content-under-container-white"></div>
-		</div>		
-	</div>		
-
-
-
-<!-- OUR PROJECTS -->
+		</div>
+	</div>
+<!-- 3 BLOCKS -->
+	<div class="container box3-cont clearfix">
+		<div class="clearfix">
+			<div class="one-third m-bot-25 column">
+				<div class="box-main-container">
+					<a href="#">
+						<div class="img-holder gears"></div>
+						<h3><span class="bold">EASY TO CUSTOMIZE</span></h3>	
+						<h3 class="text-regular">SUT ID ELIT</h3>
+					</a>			
+				</div>
+				<div class="box-text-container">
+					<h5>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at.</h5>
+				</div>
+				<div class="under-box-bg"></div>
+			</div>
+			<div class="one-third m-bot-25 column">
+				<div class="box-main-container">
+					<a href="#">
+						<div class="img-holder comp"></div>
+						<h3><span class="bold">RESPONSIVE TEMPLATE</span></h3>	
+						<h3 class="text-regular">SUT ID ELIT</h3>
+					</a>			
+				</div>
+				<div class="box-text-container">
+					<h5>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at.</h5>
+				</div>
+				<div class="under-box-bg"></div>
+			</div>
+			<div class="one-third m-bot-25 column">
+				<div class="box-main-container">
+					<a href="#">
+						<div class="img-holder seo"></div>
+						<h3><span class="bold">SEO FRIENDLY</span></h3>	
+						<h3 class="text-regular">SUT ID ELIT</h3>
+					</a>			
+				</div>
+				<div class="box-text-container">
+					<h5>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at.</h5>
+				</div>
+				<div class="under-box-bg"></div>
+			</div>
+		</div>
+	</div>
+<!-- LATEST WORK -->
 	<div class="container clearfix">
-		<div class="sixteen columns m-bot-25">
+	<!-- LATEST WORK inrto-->
+		<div class="four columns carousel-intro m-bot-25">
 			<div class="latest-work-container">
 				<div class="lw-head-container clearfix">
 					<div class="lw-caption-container">
-						<span class="bold">Our</span> Projects
+						<span class="bold">Latest</span> Work
 					</div>
 					<div class="carousel-navi jcarousel-scroll">
 						<div id="mycarousel-prev" class="jcarousel-prev"></div>
 						<div id="mycarousel-next" class="jcarousel-next"></div>
 					</div>
 				</div>
+				<div class="lw-text-container">
+					<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget. Sed lectus orci, tristique in porttitor vitae, gravida at nunc.</p>
+				</div>
+				<div class="lw-a-container">
+					<a class="arrow" href="portfolio.html">
+						<span class="bold">View</span> Our Portfolio
+					</a>
+				</div>				
 			</div>
 		</div>
-	</div>	
-		
+
 		<!-- jCAROUSEL -->
-		<div class="jcarousel container latest-work-jc m-bot-25" >
+		<div class="jcarousel latest-work-jc m-bot-25" >
 			<ul class="clearfix">
-				<!-- OUR PROJECTS ITEM -->
+				<!-- LATEST WORK ITEM -->
 				<li class="four columns">
 					<div class="content-container-white">
 							<div class="view view-first">
@@ -483,7 +333,7 @@
 						</div>
 				</li>
 
-				<!-- OUR PROJECTS ITEM -->
+				<!-- LATEST WORK ITEM -->
 				<li class="four columns">
 					<div class="content-container-white">
 							<div class="view view-first">
@@ -495,7 +345,7 @@
 								</div>
 							</div>
 							<div class="lw-item-caption-container">
-								<a href="portfolio-single.html" ><span class="bold">Lorem</span> Ipsum</a>
+								<a href="portfolio-single.html" ><span class="bold">Amet</span> Mauris</a>
 							</div>
 							<div class="lw-item-text-container">
 								<p>Pellentesque tristique volutpat nunc, id rhoncus augue tristique. Sed in at nisl.</p>
@@ -503,7 +353,7 @@
 						</div>
 				</li>
 
-				<!-- OUR PROJECTS ITEM -->
+				<!-- LATEST WORK ITEM -->
 				<li class="four columns">
 					<div class="content-container-white">
 							<div class="view view-first">
@@ -523,7 +373,7 @@
 						</div>
 				</li>
 
-				<!-- OUR PROJECTS ITEM -->
+				<!-- LATEST WORK ITEM -->
 				<li class="four columns">
 					<div class="content-container-white">
 							<div class="view view-first">
@@ -543,7 +393,7 @@
 						</div>
 				</li>
 
-				<!-- OUR PROJECTS ITEM -->
+				<!-- LATEST WORK ITEM -->
 				<li class="four columns">
 					<div class="content-container-white">
 							<div class="view view-first">
@@ -563,7 +413,7 @@
 						</div>
 				</li>
 
-				<!-- OUR PROJECTS ITEM -->
+				<!-- LATEST WORK ITEM -->
 				<li class="four columns">
 					<div class="content-container-white">
 							<div class="view view-first">
@@ -583,7 +433,7 @@
 						</div>
 				</li>
 
-				<!-- OUR PROJECTS ITEM -->
+				<!-- LATEST WORK ITEM -->
 				<li class="four columns">
 					<div class="content-container-white">
 							<div class="view view-first">
@@ -603,7 +453,7 @@
 						</div>
 				</li>
 
-				<!-- OUR PROJECTS ITEM -->
+				<!-- LATEST WORK ITEM -->
 				<li class="four columns">
 					<div class="content-container-white">
 							<div class="view view-first">
@@ -626,7 +476,8 @@
 		</div>
 		<!-- jCAROUSEL End -->
 	
-<!-- OUR PROJECTS End -->
+	</div>
+<!-- LATEST WORK End -->
 <!-- NEWS LETTER -->
 	<div class="container m-bot-25 clearfix">
 		<div class="sixteen columns">
