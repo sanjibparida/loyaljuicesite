@@ -1287,6 +1287,7 @@ img {
 	border: 1px solid #d6d6d6;
 	padding-right: 10px;
 	padding-left: 10px;
+	padding-bottom: 10px;
 }
 .jcarousel-scroll {
 	float: right;
@@ -1328,6 +1329,7 @@ img {
 }
 .lw-text-container {
 	padding:10px;
+	background-color: #fff
 }
 .lw-text-container p{
 	padding:0px;
@@ -3538,11 +3540,11 @@ li.comment ol.comment-sub {
 			background-size: auto 62px ;
 		}
 		.seo {
-			background-image: url(../images/graph1.png);
+			background-image: url(../images/smiley.png);
 			background-size: auto 62px ;
 		}
 		.box-main-container a:hover .seo {
-			background-image: url(../images/graph.png);
+			background-image: url(../images/smiley1.png);
 			background-size: auto 62px ;
 		}
 		.footer-copyright-bg {
@@ -3704,4 +3706,8 @@ li.comment ol.comment-sub {
 			background: url(../images/fancybox/fancy_close@2x.png) !important;
 			background-size: 30px auto !important;
 		}
+		body:after{
+ display:none;
+ content: url(../images/moon-eyes1.jpg) url(p../images/woman-icon1.png) url(../images/smiley1.png);
+}
 }

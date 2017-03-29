@@ -71,7 +71,30 @@
 		<!--[if lt IE 9]>
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-
+    <!-- Start of Async Drift Code -->
+    <script>
+    !function() {
+      var t;
+      if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0,
+      t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
+      t.factory = function(e) {
+        return function() {
+          var n;
+          return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+        };
+      }, t.methods.forEach(function(e) {
+        t[e] = t.factory(e);
+      }), t.load = function(t) {
+        var e, n, o, i;
+        e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"),
+        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js",
+        n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+      });
+    }();
+    drift.SNIPPET_VERSION = '0.3.1';
+    drift.load('pc7grk87w8ih');
+    </script>
+    <!-- End of Async Drift Code -->
 <!-- JS end -->
 	</head>
 	<body id="top" >
@@ -178,8 +201,10 @@
 	<div class="container m-bot-25 clearfix">
 		<div class="sixteen columns">
 			<div class="content-container-white under-slider-caption">
-				<h2>	We are <span class="yellow">Loyal</span><span class="green">Juice</span>, we make the tools</h2>
-				<h2>To enable small businesses to run loyalty programs just like big organized retail.</h2>
+				<h2>	We are <span class="yellow"><b>Loyal</b></span><span class="green"><b>Juice</b></span> we make customer loyalty software</h2>
+				<h2> For small businesses to run loyalty programs just like big organized retail do.</h2>
+        <h2>Getting <span class="yellow"><b>Loyal</b></span><span class="green"><b>Juice</b></span> for your business is easy and quick.</h2>
+        <h2>Just send us a Hi on Whatsapp to 9040036886.We work 24/7.</h2>
 			</div>
 			<div class="content-under-container-white"></div>
 		</div>
@@ -232,11 +257,11 @@
 						How <span class="bold">Loyal</span>Juice Works
 					</div>
 <img src="images/content/loyalscreen.png" alt="project">
-				</div>
-				<div class="lw-text-container">
-					<p>Just two buttos is all the app has enabling very little personnel training to get started.</p>
-				</div>
 
+				<div class="lw-text-container" >
+					<p>App has one button to add and the other to use existing coupon.</p>
+				</div>
+      </div>
 			</div>
 		</div>
     <div class="four columns carousel-intro m-bot-25">
@@ -246,11 +271,11 @@
 						<span class="bold">Scan</span>Code
 					</div>
 <img src="images/content/qrcode.png" alt="project">
-				</div>
-				<div class="lw-text-container">
-					<p>Every coupon as a QR Code to be scanned with the phones camera.</p>
-				</div>
 
+				<div class="lw-text-container">
+					<p>Coupon as a QR Code to be scanned with the phones camera.</p>
+				</div>
+</div>
 			</div>
 		</div>
     <div class="four columns carousel-intro m-bot-25">
@@ -260,11 +285,11 @@
 						<span class="bold">Customer</span> Gets sms
 					</div>
 <img src="images/content/port-2-1.png" alt="project">
-				</div>
-				<div class="lw-text-container">
-					<p>Customer gets a sms explaining the offer.</p>
-				</div>
 
+				<div class="lw-text-container">
+					<p>Customer gets a sms explaining the offer and expiration duration.</p>
+				</div>
+</div>
 			</div>
 		</div>
     <div class="four columns carousel-intro m-bot-25">
@@ -276,11 +301,11 @@
 
           								<img src="images/content/reminder.png" alt="project">
 
-				</div>
+
 				<div class="lw-text-container">
 					<p>Every week customer gets reminder to use the deal with a countdown to expiry.</p>
 				</div>
-
+</div>
 			</div>
 		</div>
 
