@@ -1130,20 +1130,20 @@ img {
 .box-main-container {
 	padding-bottom: 15px;
 	padding-top: 15px;
-	background-color: #f0f0f0;
-	border-top-width: 1px;
-	border-right-width: 1px;
-	border-bottom-width: 1px;
-	border-left-width: 1px;
+	background-color: #fbfbfb;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
 	border-top-style: solid;
 	border-right-style: solid;
-	border-bottom-style: dashed;
+	border-bottom-style: solid;
 	border-left-style: solid;
 	border-top-color: #d6d6d6;
 	border-right-color: #d6d6d6;
 	border-bottom-color: #d6d6d6;
 	border-left-color: #d6d6d6;
-	border-radius: 3px 3px 0 0;
+	border-radius: 3px 3px 3px 3px;
 	text-align:center;
 }
 .box-text-container {
